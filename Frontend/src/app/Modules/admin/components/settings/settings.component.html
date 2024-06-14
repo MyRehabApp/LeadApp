@@ -1,50 +1,58 @@
+<mat-toolbar class="bg-blue-900">
+  <p>SETTINGS </p>
+  <button mat-mini-fab color="primary" type="button" style="margin-left: auto;"
+    aria-label="Example icon button with a home icon" class="d-block mr-0 ml-auto" (click)="onCancelClick()">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+ </mat-toolbar>
+
 <section class="home_layout">
 
   <div id="section_bg" class="background">
     <mat-grid-list gutterSize="10px" cols="5" rowHeight="2:2">
 
       <mat-grid-tile>
-        <button mat-fab class="btn btn" aria-label="Example icon button with a bookmark icon"  routerLink="role">
+        <button mat-fab class="btn btn" aria-label="Example icon button with a bookmark icon"  (click)="manageRole()">
           <span class="material-icons" style="color: rgb(255, 255, 255); font-size: 45px;">badge</span>
         </button>
         <div class="button_align">Role</div>
       </mat-grid-tile>
       <mat-grid-tile>
-        <button mat-fab class="btn btn" aria-label="Example icon button with a bookmark icon" routerLink="user">
+        <button mat-fab class="btn btn" aria-label="Example icon button with a bookmark icon" (click)="manageUser()">
           <span class="material-icons" style="color: rgb(255, 255, 255); font-size: 45px;">assignment_ind</span>
         </button>
         <div class="button_align">User</div>
       </mat-grid-tile>
       <mat-grid-tile class="container">
-        <button class="btn btn" mat-fab aria-label="Example icon button with a bookmark icon" routerLink="projecttype">
+        <button class="btn btn" mat-fab aria-label="Example icon button with a bookmark icon" (click)="manageProjectType()">
           <span class="material-icons" style="color: rgb(255, 255, 255); font-size: 45px;">summarize</span>
         </button>
         <div class="button_align">ProjectType</div>
       </mat-grid-tile>
 
       <mat-grid-tile class="container">
-        <button class="btn btn" mat-fab aria-label="Example icon button with a bookmark icon" routerLink="status">
+        <button class="btn btn" mat-fab aria-label="Example icon button with a bookmark icon" (click)="manageStatus()">
           <span class="material-icons" style="color: rgb(255, 255, 255); font-size: 45px;">tour</span>
         </button>
         <div class="button_align">Status</div>
       </mat-grid-tile>
 
       <mat-grid-tile>
-        <button mat-fab class="btn btn" aria-label="Example icon button with a bookmark icon" routerLink="deletebase">
+        <button mat-fab class="btn btn" aria-label="Example icon button with a bookmark icon" (click)="manageDeleteBase()">
           <span class="material-icons" style="color: rgb(255, 255, 255); font-size: 45px;">delete_forever</span>
         </button>
         <div class="button_align">DeleteBase</div>
       </mat-grid-tile>
 
       <mat-grid-tile>
-        <button mat-fab class="btn btn" aria-label="Example icon button with a bookmark icon" routerLink="handover">
+        <button mat-fab class="btn btn" aria-label="Example icon button with a bookmark icon" (click)="manageHandover()">
           <span class="material-icons" style="color: rgb(255, 255, 255); font-size: 45px;">swap_horiz</span>
         </button>
         <div class="button_align">HandOver</div>
       </mat-grid-tile>
 
       <mat-grid-tile>
-        <button mat-fab class="btn btn" aria-label="Example icon button with a bookmark icon" routerLink="editbase">
+        <button mat-fab class="btn btn" aria-label="Example icon button with a bookmark icon" (click)="editBase()">
           <span class="material-icons" style="color: rgb(255, 255, 255); font-size: 45px;">edit</span>
         </button>
         <div class="button_align">EditBase</div>

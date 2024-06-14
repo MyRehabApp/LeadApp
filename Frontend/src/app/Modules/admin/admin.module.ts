@@ -30,6 +30,7 @@ import { ViewVisComponent } from './components/View/view-vis/view-vis.component'
 import { ViewVicComponent } from './components/View/view-vic/view-vic.component';
 import { ViewBajComponent } from './components/View/view-baj/view-baj.component';
 import { DatePipe } from '@angular/common';
+import { NewNavabrComponent } from './new-navabr/new-navabr.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { DatePipe } from '@angular/common';
     ViewAsComponent,
     ViewVisComponent,
     ViewVicComponent,
-    ViewBajComponent
+    ViewBajComponent,
+    NewNavabrComponent
   ],
   imports: [
     CommonModule,

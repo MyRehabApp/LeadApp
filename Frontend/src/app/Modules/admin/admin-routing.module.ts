@@ -19,9 +19,10 @@ import { HandOverComponent } from './components/hand-over/hand-over.component';
 import { EditBaseComponent } from './components/Edit/edit-base/edit-base.component';
 import { ProfileComponent } from '../auth/components/profile/profile.component';
 import { ReportsComponent } from '../auth/components/reports/reports.component';
+import { NewNavabrComponent } from './new-navabr/new-navabr.component';
 
 const routes: Routes = [
-  {path: '', component:NavbarComponent,
+  {path: '', component:NewNavabrComponent,
     children:[
       {path: '', component: DashboardComponent},
       {path: 'profile', component: ProfileComponent},
