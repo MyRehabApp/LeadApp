@@ -1,0 +1,51 @@
+<div class="dashboard-river">
+    <div class="dashboard-container">
+        <div class="dashboard">
+            <div class="ui-row-1">
+                <div class="logo-comp">
+                    <div>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 297 297" xml:space="preserve">
+                            <g>
+                                <!-- <image xlink:href="assets/img/tt.png" x="0" y="0" width="100" height="100" /> -->
+                            </g>
+                        </svg>
+                    </div>
+                    <p>LEAD APP</p>
+                </div>
+
+                <div class="search">
+                    <div class="text-box">
+                        <p>WELCOME &nbsp;{{userName}}</p>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <mat-icon class="nav_username">notification_important</mat-icon>
+                    <mat-icon class="nav_username" (click)="settings()">settings</mat-icon>
+                    <mat-icon class="nav_username" (click)="logOut()">power_settings_new</mat-icon>
+                    <div routerLink="profile"></div>
+                </div>
+            </div>
+
+            <div class="ui-row-2">
+                <div class="left-sidebar" >
+                    <div >
+                        <span class="material-icons" routerLink="home">home</span>
+                    </div>
+                    <div >
+                        <span class="material-icons" routerLink="projectbase">task</span>
+                    </div>
+                    <div >
+                        <span class="material-icons" routerLink="exportbase">download</span>
+                    </div>
+                    <div >
+                        <span class="material-icons" routerLink="viewbase">preview</span>
+                    </div>
+                </div>
+                <div class="template">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
